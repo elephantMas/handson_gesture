@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  eactStrictMode: true,
+};
 
-module.exports = nextConfig
+module.exports = {
+  distDir: "build",
+  ...nextConfig,
+};
