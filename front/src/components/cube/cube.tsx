@@ -23,10 +23,19 @@ const Cube: FC<Props> = ({ position, size, color }) => {
     sub.on("message", function (topic, message) {
       console.log("gesture type: " + message.toString());
       switch (message.toString()) {
-        case "DEFAULT":
+        case "None":
           break;
-        case "RIGHT":
+        case "Right":
           cube.rotation.y += 0.01;
+          break;
+        case "Left":
+          cube.rotation.y -= 0.01;
+          break;
+        case "Up":
+          cube.rotation.x += 0.01;
+          break;
+        case "Down":
+          cube.rotation.x -= 0.01;
           break;
       }
     });
