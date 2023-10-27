@@ -2,6 +2,7 @@
   "files.associations": {
     "*.css": "tailwindcss",
     "iosfwd": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "cmath": "cpp"
   }
 }
